@@ -6,8 +6,8 @@
 
     display: grid;
     margin-bottom: calc(2*#{$space-10});
-    height: 400px;
-    grid-gap: $space-1;
+    height: 420px;
+
     padding: 0px calc(5*#{$space-10});
     position: relative;
     transition: $transition-1;
@@ -30,8 +30,8 @@
     }
     // not a breakpoint - simply desktop projects
     &.desktop{
-        grid-template-columns: 7fr 4fr;
-        padding: 0px calc(5*#{$space-10});
+        grid-template-columns: 4fr 1fr;
+        padding: 0px calc(3.5*#{$space-10});
 
         &:hover{
             background-color: $color-main-2;
@@ -62,12 +62,14 @@
 
     &.desktop{
         padding: $space-2;
-        margin-top: $space-2;
+        // margin-top: $space-1;
         // a bit of top margin to make up for the fact the image is only 88% height;
         
         img {
-            // it must stay at 88 to prevent the expanding image from moving the text around;
-            max-height: 88%;
+            // it must stay at reduced % to prevent the expanding image from moving the text around;
+            // max-width: 100%;
+            margin-top: $space-5;
+            max-width: 100%;
         }
     }
 
@@ -108,7 +110,7 @@
     transition: $transition-1;
     display: block;
     background-color: $color-main;
-    width: 50%;
+    width: 150px;
     margin-top: $space-3;
     padding: $space-1;
     border-radius: $space-3;

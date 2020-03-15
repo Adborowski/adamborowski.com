@@ -150,8 +150,7 @@
 .projectModule {
   display: grid;
   margin-bottom: calc(2*66px);
-  height: 400px;
-  grid-gap: 12px;
+  height: 420px;
   padding: 0px calc(5*66px);
   position: relative;
   transition: 0.1s all linear;
@@ -169,8 +168,8 @@
   padding: 0;
 }
 .projectModule.desktop {
-  grid-template-columns: 7fr 4fr;
-  padding: 0px calc(5*66px);
+  grid-template-columns: 4fr 1fr;
+  padding: 0px calc(3.5*66px);
 }
 .projectModule.desktop:hover {
   background-color: #f5f5ff;
@@ -192,10 +191,10 @@
 }
 .imageModule.desktop {
   padding: 18px;
-  margin-top: 18px;
 }
 .imageModule.desktop img {
-  max-height: 88%;
+  margin-top: 36px;
+  max-width: 100%;
 }
 .imageModule img {
   transition: 0.1s all linear;
@@ -227,7 +226,7 @@
   transition: 0.1s all linear;
   display: block;
   background-color: blue;
-  width: 50%;
+  width: 150px;
   margin-top: 24px;
   padding: 12px;
   border-radius: 24px;

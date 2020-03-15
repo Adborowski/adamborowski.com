@@ -14,11 +14,11 @@
         </div>
 
         <div class="projectDescription">
-        A prototype app for finding shelter dogs for adoption. Users answer questions about their lifestyle, and the app finds a well matched pet. 
+        A prototype app for matching shelter dogs with adopters using a lifestyle questionnaire.
         </div>
 
         <a href="http://www.adamborowski.com/topdog" class="btn btn-demo">
-            <div class="btn-label">Demo</div>
+            <div class="btn-label">Try it</div>
         </a>
 
     </div>
@@ -39,15 +39,14 @@
         </div>
 
         <div class="projectDescription">
-        A welcome site for a blockchain-based deep tech enterprise. Involves custom Lottie-based animations and a modular component structure. 
+        CVI + website with custom animations for a blockchain start-up.
         </div>
 
         <a href="http://www.adamborowski.com/inai" class="btn btn-demo">
-            <div class="btn-label">Demo</div>
+            <div class="btn-label">Try it</div>
         </a>
 
     </div>
-
     
 </div>
 
@@ -65,11 +64,11 @@
         </div>
 
         <div class="projectDescription">
-        An experimental tool for graphic designers who want to create artwork that's heavy in typography.
+        An experimental art tool for creating type-based drawings and designs.
         </div>
 
         <a href="http://www.adamborowski.com/echo" class="btn btn-demo">
-            <div class="btn-label">Demo</div>
+            <div class="btn-label">Try it</div>
         </a>
 
     </div>
@@ -89,11 +88,11 @@
         </div>
 
         <div class="projectDescription">
-        A video streaming site developed following a brief from DR. Based on Angular, SASS, and love for cinema. 
+        A video streaming site developed with Angular and SASS.
         </div>
 
         <a href="http://5kreations.com/mydrtv/#/portal/home" class="btn btn-demo">
-            <div class="btn-label">Demo</div>
+            <div class="btn-label">Try it</div>
         </a>
 
     </div>
@@ -115,7 +114,7 @@
         </div>
 
         <div class="projectDescription">
-        This UI and business concept has been awarded first prize by the Danish Design Council.
+        UI proposal for a subscription-based business solution designed as part of IKEA Circular Economy Hackathon. <br><br>Awarded first prize.
         </div>
 
     </div>
