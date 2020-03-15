@@ -1,0 +1,124 @@
+﻿@import "./vars";
+
+.projectModule{
+
+    display: grid;
+    margin-bottom: calc(2*#{$space-10});
+    height: 400px;
+    grid-gap: $space-1;
+    padding: 0px calc(5*#{$space-10});
+    position: relative;
+    transition: 0.3s all ease-in-out;
+
+    &:first-of-type{
+        margin-top: calc(2*#{$space-10});
+    }
+
+    &.mobile{
+
+        grid-template-columns: 1fr 2fr;
+        margin-left: $space-10;
+        // this will cause trouble
+
+        &:hover{
+            background-color: $color-main-2;
+    
+            .imageModule{
+
+                padding: $space-1;
+
+                img{
+                    // padding: $space-1;
+                }
+            }
+    
+        }
+
+    }
+
+    &.desktop{
+        grid-template-columns: 1fr 3fr;
+        padding: 0px calc(1.1*#{$space-10});
+        margin-left: $space-10;
+        // this will cause trouble
+
+        &:hover{
+            background-color: $color-main-2;
+    
+            .imageModule{
+                padding: $space-1;
+            }
+    
+        }
+
+    }
+    
+   
+
+}
+
+.textModule{
+
+    // position: absolute;
+    // border: 2px solid lightblue;
+    transition: 0.3s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 $space-1;
+
+    .projectTitle{
+        transition: 0.3s all ease-in-out;
+        font-family: $font-stack-1;
+        font-size: $space-4;
+        margin-bottom: $space-2;
+    }
+
+    .projectDescription{
+        font-family: $font-stack-2;
+        font-size: $space-2;
+        width: 300px;
+    }
+}
+
+.imageModule{
+    
+    padding: $space-2;
+    // border: 2px solid lightcoral;
+    position: relative;
+    height: 100%;
+    transition: 0.3s all ease-in-out;
+
+    img{
+        transition: 0.3s all ease-in-out;
+        max-height: 100%;
+        // background-color: red;
+        display: block;
+        margin: auto;
+    }
+}
+
+.btn{
+
+    transition: 0.3s all ease-in-out;
+    display: block;
+    background-color: $color-main;
+    width: 50%;
+    margin-top: $space-3;
+    padding: $space-1;
+    border-radius: $space-3;
+    cursor: pointer;
+
+    .btn-label{
+        color: white;
+        font-family: $font-stack-1;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    &:hover{
+        background-color: $color-main-3;
+    }
+
+}
