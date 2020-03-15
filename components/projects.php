@@ -3,18 +3,18 @@
 <!-- topdog -->
 <div class="projectModule mobile">
 
-    <div class="imageModule">
+    <div class="imageModule mobile">
         <img src="images/m4.png">
     </div>
 
     <div class="textModule">
 
         <div class="projectTitle">
-        TopDog
+        Topdog
         </div>
 
         <div class="projectDescription">
-        A full-stack working prototype targetting dog shelters. Instead of letting users choose an animal to adopt, TopDog asks them behavioural and lifestyle questions, and matches a pet based on the user's life circumstances. 
+        A prototype app for finding shelter dogs for adoption. Users answer questions about their lifestyle, and the app finds a well matched pet. 
         </div>
 
         <a href="http://www.adamborowski.com/topdog" class="btn btn-demo">
@@ -28,7 +28,7 @@
 <!-- inai -->
 <div class="projectModule mobile">
 
-    <div class="imageModule">
+    <div class="imageModule mobile">
         <img src="images/m6.png">
     </div>
 
@@ -54,7 +54,7 @@
 <!-- echo -->
 <div class="projectModule mobile">
 
-    <div class="imageModule">
+    <div class="imageModule mobile">
         <img src="images/m8.png">
     </div>
 
@@ -78,7 +78,7 @@
 <!-- drtv -->
 <div class="projectModule desktop">
 
-    <div class="imageModule">
+    <div class="imageModule desktop">
         <img src="images/d3.png">
     </div>
 
@@ -104,7 +104,7 @@
 <!-- ikea -->
 <div class="projectModule desktop">
 
-    <div class="imageModule">
+    <div class="imageModule desktop">
         <img src="images/d2.png">
     </div>
 

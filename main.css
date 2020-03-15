@@ -154,25 +154,23 @@
   grid-gap: 12px;
   padding: 0px calc(5*66px);
   position: relative;
-  transition: 0.3s all ease-in-out;
+  transition: 0.1s all linear;
 }
 .projectModule:first-of-type {
   margin-top: calc(2*66px);
 }
 .projectModule.mobile {
-  grid-template-columns: 1fr 2fr;
-  margin-left: 66px;
+  grid-template-columns: 3fr 4fr;
 }
 .projectModule.mobile:hover {
   background-color: #f5f5ff;
 }
 .projectModule.mobile:hover .imageModule {
-  padding: 12px;
+  padding: 0;
 }
 .projectModule.desktop {
-  grid-template-columns: 1fr 3fr;
-  padding: 0px calc(1.1*66px);
-  margin-left: 66px;
+  grid-template-columns: 7fr 4fr;
+  padding: 0px calc(5*66px);
 }
 .projectModule.desktop:hover {
   background-color: #f5f5ff;
@@ -181,15 +179,40 @@
   padding: 12px;
 }
 
+.imageModule {
+  height: 100%;
+  transition: 0.1s all linear;
+}
+.imageModule.mobile {
+  padding: 12px;
+  height: 100%;
+}
+.imageModule.mobile img {
+  max-height: 100%;
+}
+.imageModule.desktop {
+  padding: 18px;
+  margin-top: 18px;
+}
+.imageModule.desktop img {
+  max-height: 88%;
+}
+.imageModule img {
+  transition: 0.1s all linear;
+  display: block;
+  margin: auto;
+}
+
 .textModule {
-  transition: 0.3s all ease-in-out;
+  position: relative;
+  transition: 0.1s all linear;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 12px;
 }
 .textModule .projectTitle {
-  transition: 0.3s all ease-in-out;
+  transition: 0.1s all linear;
   font-family: Rigid-square, sans-serif;
   font-size: 30px;
   margin-bottom: 18px;
@@ -200,21 +223,8 @@
   width: 300px;
 }
 
-.imageModule {
-  padding: 18px;
-  position: relative;
-  height: 100%;
-  transition: 0.3s all ease-in-out;
-}
-.imageModule img {
-  transition: 0.3s all ease-in-out;
-  max-height: 100%;
-  display: block;
-  margin: auto;
-}
-
 .btn {
-  transition: 0.3s all ease-in-out;
+  transition: 0.1s all linear;
   display: block;
   background-color: blue;
   width: 50%;
@@ -230,7 +240,7 @@
   text-align: center;
 }
 .btn:hover {
-  background-color: #0000cc;
+  background-color: darkblue;
 }
 
 /*# sourceMappingURL=main.css.map */

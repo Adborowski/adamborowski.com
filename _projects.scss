@@ -1,5 +1,7 @@
 ﻿@import "./vars";
 
+// DON'T CONFUSE BREAKPOINTS WITH PROJECT TYPES!
+
 .projectModule{
 
     display: grid;
@@ -8,67 +10,87 @@
     grid-gap: $space-1;
     padding: 0px calc(5*#{$space-10});
     position: relative;
-    transition: 0.3s all ease-in-out;
+    transition: $transition-1;
 
     &:first-of-type{
         margin-top: calc(2*#{$space-10});
     }
-
+    // this is projects for mobile phones, NOT breakpoints
     &.mobile{
 
-        grid-template-columns: 1fr 2fr;
-        margin-left: $space-10;
-        // this will cause trouble
+        grid-template-columns: 3fr 4fr;
 
         &:hover{
             background-color: $color-main-2;
     
             .imageModule{
-
-                padding: $space-1;
-
-                img{
-                    // padding: $space-1;
-                }
+                padding: 0;
             }
-    
         }
+    }
+    // not a breakpoint - simply desktop projects
+    &.desktop{
+        grid-template-columns: 7fr 4fr;
+        padding: 0px calc(5*#{$space-10});
 
+        &:hover{
+            background-color: $color-main-2;
+    
+            .imageModule{
+                padding: $space-1;
+            }
+        }
+    }
+}
+
+
+.imageModule{
+    
+    // border: 2px solid lightcoral;
+    
+    height: 100%;
+    transition: $transition-1;
+    
+    &.mobile{
+        padding: $space-1;
+        height: 100%;
+
+        img {
+            max-height: 100%;
+        }
     }
 
     &.desktop{
-        grid-template-columns: 1fr 3fr;
-        padding: 0px calc(1.1*#{$space-10});
-        margin-left: $space-10;
-        // this will cause trouble
-
-        &:hover{
-            background-color: $color-main-2;
-    
-            .imageModule{
-                padding: $space-1;
-            }
-    
+        padding: $space-2;
+        margin-top: $space-2;
+        // a bit of top margin to make up for the fact the image is only 88% height;
+        
+        img {
+            // it must stay at 88 to prevent the expanding image from moving the text around;
+            max-height: 88%;
         }
-
     }
-    
-   
 
+    img{
+        transition: $transition-1;
+        display: block;
+        margin: auto;
+    }
 }
 
 .textModule{
 
     // position: absolute;
     // border: 2px solid lightblue;
-    transition: 0.3s all ease-in-out;
+    position: relative;
+    transition: $transition-1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 $space-1;
 
     .projectTitle{
-        transition: 0.3s all ease-in-out;
+        transition: $transition-1;
         font-family: $font-stack-1;
         font-size: $space-4;
         margin-bottom: $space-2;
@@ -81,26 +103,9 @@
     }
 }
 
-.imageModule{
-    
-    padding: $space-2;
-    // border: 2px solid lightcoral;
-    position: relative;
-    height: 100%;
-    transition: 0.3s all ease-in-out;
-
-    img{
-        transition: 0.3s all ease-in-out;
-        max-height: 100%;
-        // background-color: red;
-        display: block;
-        margin: auto;
-    }
-}
-
 .btn{
 
-    transition: 0.3s all ease-in-out;
+    transition: $transition-1;
     display: block;
     background-color: $color-main;
     width: 50%;
@@ -118,7 +123,7 @@
     }
 
     &:hover{
-        background-color: $color-main-3;
+        background-color: darkblue;
     }
 
 }
