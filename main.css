@@ -195,7 +195,6 @@
 }
 .imageModule.mobile {
   padding: 12px;
-  height: 100%;
 }
 .imageModule.mobile img {
   max-height: 100%;
