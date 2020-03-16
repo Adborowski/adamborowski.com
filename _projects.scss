@@ -4,45 +4,51 @@
 
 .projectModule{
 
-    display: grid;
+    height: 400px;
+    display: grid; // grid templates are set separately for Mobile and Desktop projects
     position: relative;
+    z-index: $layer-0;
     transition: $transition-1;
     margin-bottom: calc(2*#{$space-10});
-    height: 420px;
-    padding: 0px calc(2*#{$space-10});
-    // background-color: red;
 
     @media screen and (min-width: 1200px){
         padding: 0px calc(5*#{$space-10});
     }
     
-
     &:first-of-type{
-        margin-top: calc(2*#{$space-10});
+        margin-top: calc(1*#{$space-10});
     }
-    // this is projects for mobile phones, NOT breakpoints
+
+    // not a breakpoint - projects displaying on phone
     &.mobile{
+        margin-bottom: calc(5*#{$space-10});
+        grid-template-rows: 2fr 1fr;
 
-        grid-template-columns: 3fr 4fr;
-
-        &:hover{
-            background-color: $color-main-2;
-    
-            .imageModule{
-                padding: 0;
+        @media screen and (min-width: 1000px){
+            // hovers should only work on screens 1000px +
+            &:hover{
+                background-color: $color-main-2;
+        
+                .imageModule{
+                    padding: 0;
+                }
             }
         }
-    }
-    // not a breakpoint - simply desktop projects
-    &.desktop{
-        grid-template-columns: 4fr 1fr;
-        padding: 0px calc(3.5*#{$space-10});
 
-        &:hover{
-            background-color: $color-main-2;
-    
-            .imageModule{
-                padding: $space-1;
+        
+    }
+    // not a breakpoint - projects displaying on laptop
+    &.desktop{
+        grid-template-rows: 1fr 1fr;
+
+        @media screen and (min-width: 1200px){
+            // hovers should only work on screens 1000px +
+            &:hover{
+                background-color: $color-main-2;
+        
+                .imageModule{
+                    padding: $space-1;
+                }
             }
         }
     }
@@ -93,14 +99,12 @@
 
 .textModule{
 
-    // position: absolute;
-    // border: 2px solid lightblue;
     position: relative;
     transition: $transition-1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 $space-1;
+    padding: 0 $space-3;
+
+    // small screen:
+    text-align: center;
 
     .projectTitle{
         transition: $transition-1;
@@ -112,7 +116,7 @@
     .projectDescription{
         font-family: $font-stack-2;
         font-size: $space-2;
-        width: 300px;
+        // on desktop, this will be width:300px;
     }
 }
 
@@ -122,10 +126,13 @@
     display: block;
     background-color: $color-main;
     width: 150px;
+    // margin:auto is only necessary on small screens - remember to unset later
+    margin:auto;
     margin-top: $space-3;
     padding: $space-1;
     border-radius: $space-3;
     cursor: pointer;
+    text-decoration: none;
 
     .btn-label{
         color: white;

@@ -4,14 +4,13 @@
             <span style="font-weight: 600">ADAM BOROWSKI<span>
         </div>
 
-    <!-- <div class="navButtonDesktop" data-target="webdesign">Web Design</div>
-    <div class="navButtonDesktop" data-target="branding">Branding</div>
-    <div class="navButtonDesktop" data-target="graphic">Graphic Design</div>
-    <div class="navButtonDesktop" data-target="photo">Photography</div> -->
+        <div id="btnBurger">
+            <span>≡</span>
+        </div>
 
-    <!-- <div class="vCentered" id="btnBurger">
-        <span>&#9776</span>
-    </div> -->
+        <a href="#" id="btnReturn">
+            <span>^</span>
+        </a>
 
     <div class="vCentered" id="mobileMenu">
         <div class="vCentered buttonExit" id="btn-exitMobileMenu"><span>x</span></div>

@@ -22,32 +22,21 @@
     position: relative;
     width: 100vw;
     height: $space-10;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     background-color: white;
     // padding-left: 15px;
     border-bottom: 1px solid $color-main;
-}
-
-#boxLogo{
-    position: fixed;
-    top: 0;
-    left: 5px;
-    height: 70px;
+    
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
 }
 
 #textLogo{
     font-family: rigid-square, sans-serif;
-    // font-weight: 300;
-    font-size: 24px;
+    font-size: $space-2;
     line-height: 20px;
     height: 100%;
-    margin-left: 5px;
     color: blue;
 
     span{
@@ -89,36 +78,52 @@
     background-color: ghostwhite;
 }
 
-#btnBurger{
+#btnBurger, #btnReturn{
     display: flex;
-    width: 70px;
-    height: 70px;
-    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    width: $space-10;
+    height: $space-10;
+    font-size: $space-5;
     font-weight: 100;
-    font-family: roboto, sans-serif;
-    position: absolute;
+    font-family: $font-stack-1;
+    position: fixed;
+    top: 0;
     right: 0;
-    // top: 0;
+    color: $color-main;
     
     span{
         text-align: center;
+        padding-bottom: 4px;
+    }
+}
+
+// the arrow to take you back up
+#btnReturn{
+    top: unset;
+    bottom: 0;
+    text-decoration: none;
+    
+    span{
+        padding-bottom: 0px;
+        padding-top: $space-3;
     }
 }
 
 #mobileMenu{
-    background-color: black;
+    background-color: $color-main;
+    font-family: $font-stack-1;
+    font-size: $space-3;
+    z-index: $layer-1;
     position: fixed;
     top: -100vh;
     left: 0;
     width: 100vw;
     height: 100vh;
-    // display: none;
     transition: 0.3s all;
-    // border-radius: 300px 0 0 0;
 
     .buttonExit{
         color: white;
-        font-family: roboto, sans-serif;
         width: 70px;
         height: 70px;
         position: absolute;
@@ -128,7 +133,6 @@
 
         span{
             text-align: center;
-            font-size: 30px;
             font-weight: 200;
         }
     }
@@ -140,8 +144,6 @@
         height: 15%;
         
         span{
-            // font-family: roboto, sans-serif;
-            font-size: 20px;
             color: white;
             font-weight: 300;
         }
@@ -150,29 +152,4 @@
 
 .ml30{
     margin-left:30px;
-}
-
-.boxTitle{
-    // font-family: roboto, sans-serif;
-    width: 75%;
-    font-weight: 500;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    color: white;
-    margin-top: 40px;
-    margin-bottom: 30px;
-
-}
-
-.boxText{
-    // font-family: roboto, sans-serif;
-    line-height: 1.8rem;
-    font-weight: 200;
-    font-size: 1rem;
-    color: white;
-    width: 60%;
-}
-
-.btn:hover{
-    cursor:pointer;
 }
