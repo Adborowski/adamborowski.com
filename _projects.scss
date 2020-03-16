@@ -5,12 +5,17 @@
 .projectModule{
 
     display: grid;
-    margin-bottom: calc(2*#{$space-10});
-    height: 420px;
-
-    padding: 0px calc(5*#{$space-10});
     position: relative;
     transition: $transition-1;
+    margin-bottom: calc(2*#{$space-10});
+    height: 420px;
+    padding: 0px calc(2*#{$space-10});
+    // background-color: red;
+
+    @media screen and (min-width: 1200px){
+        padding: 0px calc(5*#{$space-10});
+    }
+    
 
     &:first-of-type{
         margin-top: calc(2*#{$space-10});
@@ -48,7 +53,6 @@
     
     // border: 2px solid lightcoral;
     
-    height: 100%;
     transition: $transition-1;
     
     &.mobile{
@@ -61,6 +65,11 @@
     }
 
     &.desktop{
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+
+        max-height: 100%;
         padding: $space-2;
         // margin-top: $space-1;
         // a bit of top margin to make up for the fact the image is only 88% height;
@@ -68,8 +77,10 @@
         img {
             // it must stay at reduced % to prevent the expanding image from moving the text around;
             // max-width: 100%;
-            margin-top: $space-5;
-            max-width: 100%;
+            max-width:100%;
+            max-height: 100%;
+            // margin-top: $space-1;
+            
         }
     }
 

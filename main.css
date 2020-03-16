@@ -149,11 +149,16 @@
 
 .projectModule {
   display: grid;
-  margin-bottom: calc(2*66px);
-  height: 420px;
-  padding: 0px calc(5*66px);
   position: relative;
   transition: 0.1s all linear;
+  margin-bottom: calc(2*66px);
+  height: 420px;
+  padding: 0px calc(2*66px);
+}
+@media screen and (min-width: 1200px) {
+  .projectModule {
+    padding: 0px calc(5*66px);
+  }
 }
 .projectModule:first-of-type {
   margin-top: calc(2*66px);
@@ -179,7 +184,6 @@
 }
 
 .imageModule {
-  height: 100%;
   transition: 0.1s all linear;
 }
 .imageModule.mobile {
@@ -190,11 +194,12 @@
   max-height: 100%;
 }
 .imageModule.desktop {
+  max-height: 100%;
   padding: 18px;
 }
 .imageModule.desktop img {
-  margin-top: 36px;
   max-width: 100%;
+  max-height: 100%;
 }
 .imageModule img {
   transition: 0.1s all linear;

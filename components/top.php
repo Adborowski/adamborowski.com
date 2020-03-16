@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/wnf2eqa.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="responsive.css"/>
+
+    <link rel="icon" 
+      type="image/png" 
+      href="./images/favicon.png">
     
 </head>
 <body>
