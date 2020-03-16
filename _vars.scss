@@ -20,9 +20,14 @@ $space-8: 54px;
 $space-9: 60px;
 $space-10: 66px;
 
-// for z-indexing, possible redundancy
-$layer-0: 0;
-$layer-1: 100;
-$layer-2: 200;
+$space-large-1: calc(2*#{$space-10});
+$space-large-2: calc(3*#{$space-10});
+$space-large-3: calc(4*#{$space-10});
+$space-large-4: calc(5*#{$space-10});
+
+// z-index
+$layer-0: 0; // base
+$layer-1: 100; // fixed buttons
+$layer-2: 200; // mobile menu
 $layer-3: 300;
 $layer-4: 400;

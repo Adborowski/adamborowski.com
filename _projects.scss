@@ -4,6 +4,7 @@
 
 .projectModule{
 
+    // general settings for projectModules
     height: 400px;
     display: grid; // grid templates are set separately for Mobile and Desktop projects
     position: relative;
@@ -11,37 +12,52 @@
     transition: $transition-1;
     margin-bottom: calc(2*#{$space-10});
 
-    @media screen and (min-width: 1200px){
-        padding: 0px calc(5*#{$space-10});
-    }
-    
+    // first project on the site
     &:first-of-type{
-        margin-top: calc(1*#{$space-10});
+        margin-top: $space-2;
     }
 
-    // not a breakpoint - projects displaying on phone
+    // projects in phone mockup (not a breakpoint!)
     &.mobile{
+        
+        // mobile viewing
         margin-bottom: calc(5*#{$space-10});
         grid-template-rows: 2fr 1fr;
 
+        // desktop viewing
         @media screen and (min-width: 1000px){
+
+            padding: 0px $space-large-2;
+
+            grid-template-rows: unset;
+            grid-template-columns: 1fr 1fr;
+
             // hovers should only work on screens 1000px +
             &:hover{
                 background-color: $color-main-2;
-        
+
+                // imageModule's status when its parent project is hovered over
                 .imageModule{
                     padding: 0;
                 }
-            }
-        }
+            } // end of :hover
+        } // end of @media
+    } // end of .mobile
 
-        
-    }
-    // not a breakpoint - projects displaying on laptop
+
+    // projects in laptop mockup (not a breakpoint!)
     &.desktop{
+
         grid-template-rows: 1fr 1fr;
 
-        @media screen and (min-width: 1200px){
+        // desktop viewing
+        @media screen and (min-width: 1000px){
+
+            padding: 0px $space-large-1;
+
+            grid-template-rows: unset;
+            grid-template-columns: 3fr 2fr;
+
             // hovers should only work on screens 1000px +
             &:hover{
                 background-color: $color-main-2;
@@ -49,11 +65,10 @@
                 .imageModule{
                     padding: $space-1;
                 }
-            }
-        }
-    }
+            }  // end of :hover
+        } // end of @media
+    } // end of .desktop
 }
-
 
 .imageModule{
     
@@ -71,22 +86,23 @@
     }
 
     &.desktop{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
 
-        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: $space-2;
-        // margin-top: $space-1;
-        // a bit of top margin to make up for the fact the image is only 88% height;
+        margin-bottom: $space-2;
+
+        @media screen and (min-width: 1000px){
+
+        margin-bottom: 0px;
+
+        }
         
         img {
-            // it must stay at reduced % to prevent the expanding image from moving the text around;
-            // max-width: 100%;
-            max-width:100%;
-            max-height: 100%;
-            // margin-top: $space-1;
             
+            max-width: 100%;
+
         }
     }
 
@@ -105,6 +121,13 @@
 
     // small screen:
     text-align: center;
+
+    @media screen and (min-width: 1000px){
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .projectTitle{
         transition: $transition-1;
@@ -126,9 +149,15 @@
     display: block;
     background-color: $color-main;
     width: 150px;
-    // margin:auto is only necessary on small screens - remember to unset later
+    
     margin:auto;
     margin-top: $space-3;
+
+    @media screen and (min-width: 1000px){
+        margin:unset;
+        margin-top: $space-3; // you need two of this for some reason
+    }
+
     padding: $space-1;
     border-radius: $space-3;
     cursor: pointer;

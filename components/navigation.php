@@ -14,10 +14,9 @@
 
     <div class="vCentered" id="mobileMenu">
         <div class="vCentered buttonExit" id="btn-exitMobileMenu"><span>x</span></div>
-        <div class="vCentered navButtonMobile" data-target="webdesign"><span>Web Design</span></div>
-        <div class="vCentered navButtonMobile" data-target="branding"><span>Branding</span></div>
-        <div class="vCentered navButtonMobile" data-target="graphic"><span>Graphic Design</span></div>
-        <div class="vCentered navButtonMobile" data-target="photo"><span>Photography</span></div>
+        <div class="vCentered navButtonMobile" data-target="web"><span>Web</span></div>
+        <div class="vCentered navButtonMobile" data-target="identity"><span>Visual Identity</span></div>
+        <div class="vCentered navButtonMobile" data-target="contact"><span>Contact</span></div>
     </div>
 
 </div>
