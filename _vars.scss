@@ -24,6 +24,12 @@ $space-large-1: calc(2*#{$space-10});
 $space-large-2: calc(3*#{$space-10});
 $space-large-3: calc(4*#{$space-10});
 $space-large-4: calc(5*#{$space-10});
+$space-large-5: calc(6*#{$space-10});
+$space-large-6: calc(7*#{$space-10});
+$space-large-7: calc(8*#{$space-10});
+$space-large-8: calc(9*#{$space-10});
+$space-large-9: calc(10*#{$space-10});
+$space-large-10: calc(11*#{$space-10});
 
 // z-index
 $layer-0: 0; // base
@@ -31,3 +37,9 @@ $layer-1: 100; // fixed buttons
 $layer-2: 200; // mobile menu
 $layer-3: 300;
 $layer-4: 400;
+
+// debugging borders
+
+$border-debug-1: 0px solid lightcoral;
+$border-debug-2: 2px solid lightblue;
+$border-debug-3: 2px solid lightgreen;

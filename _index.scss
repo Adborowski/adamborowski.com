@@ -20,10 +20,10 @@
 
 #navBar{
     position: relative;
-    width: 100vw;
+    // width: 100%;
     height: $space-10;
     // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: white;
+    background-color: $color-background;
     // padding-left: 15px;
     border-bottom: 1px solid $color-main;
     
@@ -34,15 +34,18 @@
 
 #textLogo{
     font-family: rigid-square, sans-serif;
-    font-size: $space-2;
-    line-height: 20px;
-    height: 100%;
+    
+    // height: 100%;
     color: blue;
 
     span{
-        display: block;
+        // display: block;
         font-weight: 400;
-        // height: 10px;
+        font-size: $space-2;
+
+        @media screen and (min-width: 1200px){
+            font-size: $space-2;
+        }
     }
 }
 

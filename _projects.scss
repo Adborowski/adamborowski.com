@@ -21,12 +21,13 @@
     &.mobile{
         
         // mobile viewing
-        margin-bottom: calc(5*#{$space-10});
+        margin-bottom: $space-large-4;
         grid-template-rows: 2fr 1fr;
 
-        // desktop viewing
+        // small desktop viewing
         @media screen and (min-width: 1000px){
 
+            margin-bottom: $space-large-1;
             padding: 0px $space-large-2;
 
             grid-template-rows: unset;
@@ -42,6 +43,11 @@
                 }
             } // end of :hover
         } // end of @media
+
+        @media screen and (min-width: 1200px){
+            padding: 0px $space-large-7;
+            grid-template-columns: 1fr 1fr;
+        }
     } // end of .mobile
 
 
@@ -67,12 +73,16 @@
                 }
             }  // end of :hover
         } // end of @media
+
+        @media screen and (min-width: 1200px){
+            padding: 0px $space-large-5;
+        }
     } // end of .desktop
 }
 
 .imageModule{
     
-    // border: 2px solid lightcoral;
+    border: $border-debug-1;
     
     transition: $transition-1;
     
@@ -114,6 +124,8 @@
 }
 
 .textModule{
+
+    border: $border-debug-1;
 
     position: relative;
     transition: $transition-1;

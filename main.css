@@ -16,7 +16,6 @@
 
 #navBar {
   position: relative;
-  width: 100vw;
   height: 66px;
   background-color: white;
   border-bottom: 1px solid blue;
@@ -27,14 +26,16 @@
 
 #textLogo {
   font-family: rigid-square, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  height: 100%;
   color: blue;
 }
 #textLogo span {
-  display: block;
   font-weight: 400;
+  font-size: 18px;
+}
+@media screen and (min-width: 1200px) {
+  #textLogo span {
+    font-size: 18px;
+  }
 }
 
 .imgLogo {
@@ -148,6 +149,7 @@
 }
 @media screen and (min-width: 1000px) {
   .projectModule.mobile {
+    margin-bottom: calc(2*66px);
     padding: 0px calc(3*66px);
     grid-template-rows: unset;
     grid-template-columns: 1fr 1fr;
@@ -157,6 +159,12 @@
   }
   .projectModule.mobile:hover .imageModule {
     padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projectModule.mobile {
+    padding: 0px calc(8*66px);
+    grid-template-columns: 1fr 1fr;
   }
 }
 .projectModule.desktop {
@@ -175,8 +183,14 @@
     padding: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .projectModule.desktop {
+    padding: 0px calc(6*66px);
+  }
+}
 
 .imageModule {
+  border: 0px solid lightcoral;
   transition: 0.1s all linear;
 }
 .imageModule.mobile {
@@ -208,6 +222,7 @@
 }
 
 .textModule {
+  border: 0px solid lightcoral;
   position: relative;
   transition: 0.1s all linear;
   padding: 0 24px;
