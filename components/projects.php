@@ -14,7 +14,7 @@
         </div>
 
         <div class="projectDescription">
-        A prototype app for matching shelter dogs with adopters using a lifestyle questionnaire.
+        Prototype of an app that matches shelter dogs with adopters using a lifestyle questionnaire.
         </div>
 
         <a href="http://www.adamborowski.com/topdog" class="btn btn-demo">
@@ -114,7 +114,7 @@
         </div>
 
         <div class="projectDescription">
-        UI proposal for a subscription-based business solution designed as part of IKEA Circular Economy Hackathon. <br><br>Awarded first prize.
+        UI proposal for a first-prize sustainability solution.
         </div>
 
     </div>
