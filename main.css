@@ -163,6 +163,9 @@
   .projectModule.mobile:hover {
     background-color: #f5f5ff;
   }
+  .projectModule.mobile:hover .imageModule {
+    padding: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .projectModule.mobile {
@@ -203,7 +206,7 @@
     background-color: #f5f5ff;
   }
   .projectModule.desktop:hover .imageModule {
-    padding: 30px;
+    padding: 48px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -250,6 +253,7 @@
 }
 @media screen and (min-width: 1000px) {
   .imageModule.desktop {
+    padding: 54px;
     margin-bottom: 0px;
   }
 }
