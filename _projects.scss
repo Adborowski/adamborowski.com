@@ -44,7 +44,7 @@
 
                 // imageModule's status when its parent project is hovered over
                 .imageModule{
-                    padding: $space-7;
+                    // padding: $space-9;
                 }
             } // end of :hover
         } // end of @media
@@ -56,6 +56,10 @@
 
         @media screen and (min-width: 1400px){
             padding: 0px $space-large-4;
+        }
+
+        @media screen and (min-width: 1500px){
+            padding: 0px $space-large-6;
         }
     } // end of .mobile
 
@@ -112,10 +116,16 @@
 
         img {
             max-height: 100%;
+            margin: auto;
+            display:block;
         }
 
         @media screen and (min-width: 1000px){
-        padding: $space-10;
+            padding: $space-1;
+        }
+
+        @media screen and (min-width: 1200px){
+            padding: $space-10;
         }
     }
 
@@ -175,6 +185,7 @@
         padding: 0 0;
         padding-right: $space-large-1;
         padding-left: $space-10;
+        margin-top: 0;
     }
 
     .projectTitle{

@@ -137,7 +137,7 @@
   display: grid;
   position: relative;
   z-index: 0;
-  transition: 0.1s all linear;
+  transition: 0.2s all linear;
   margin-bottom: calc(2*66px);
 }
 .projectModule:first-of-type {
@@ -163,9 +163,6 @@
   .projectModule.mobile:hover {
     background-color: #f5f5ff;
   }
-  .projectModule.mobile:hover .imageModule {
-    padding: 48px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .projectModule.mobile {
@@ -176,6 +173,11 @@
 @media screen and (min-width: 1400px) {
   .projectModule.mobile {
     padding: 0px calc(5*66px);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .projectModule.mobile {
+    padding: 0px calc(7*66px);
   }
 }
 .projectModule.desktop {
@@ -213,15 +215,22 @@
 
 .imageModule {
   border: 0px solid lightcoral;
-  transition: 0.1s all linear;
+  transition: 0.2s all linear;
 }
 .imageModule.mobile {
   padding: 12px;
 }
 .imageModule.mobile img {
   max-height: 100%;
+  margin: auto;
+  display: block;
 }
 @media screen and (min-width: 1000px) {
+  .imageModule.mobile {
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .imageModule.mobile {
     padding: 66px;
   }
@@ -248,7 +257,7 @@
   max-width: 100%;
 }
 .imageModule img {
-  transition: 0.1s all linear;
+  transition: 0.2s all linear;
   display: block;
   margin: auto;
 }
@@ -256,7 +265,7 @@
 .textModule {
   border: 0px solid lightcoral;
   position: relative;
-  transition: 0.1s all linear;
+  transition: 0.2s all linear;
   padding: 0 24px;
   text-align: center;
 }
@@ -275,10 +284,11 @@
     padding: 0 0;
     padding-right: calc(2*66px);
     padding-left: 66px;
+    margin-top: 0;
   }
 }
 .textModule .projectTitle {
-  transition: 0.1s all linear;
+  transition: 0.2s all linear;
   font-family: Rigid-square, sans-serif;
   font-size: 30px;
   margin-bottom: 18px;
@@ -289,7 +299,7 @@
 }
 
 .btn {
-  transition: 0.1s all linear;
+  transition: 0.2s all linear;
   display: block;
   background-color: blue;
   width: 150px;
